@@ -32,7 +32,7 @@ It is written in Python, hence I recommend to use it on a desktop environment. T
 
 - You can run this script manually everytime you update your Enpass database. You can also set the Windows Task Scheduler in order to run the script whenever you want, e.g.: once in the morning and once in the evening. The Windows Task Scheduler is highly customizable and you can find everything about it [here](https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page).
 
-- This script is really simple and full of comments ready to help you understand how it works. Moreover you can easily adapt it to your needs by changing the default paths that point to the database or to the Cloud provider of your choice.
+- This script is really simple and full of comments ready to help you understand how it works. Moreover you can easily adapt it to your needs by changing the default paths that point to the database or to the Cloud provider of your choice. In order to do that you can even open and modify the script with something like [Notepad++](https://notepad-plus-plus.org/).
 
 ## Built With
 
