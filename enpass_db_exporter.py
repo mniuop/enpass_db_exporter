@@ -16,25 +16,28 @@ from os import path
 
 
 def main():
-	# Let's make a duplicate of an existing file.
+	#Let's make a duplicate of an existing file.
 	if path.exists("C:/Users/User/Documents/Enpass/walletx.db/"):	#Here you can set your own path.
 
-		# Get the path to the file in the current directory.
+		#Get the path to the file in the current directory.
 		src = path.realpath("C:/Users/User/Documents/Enpass/walletx.db/");	#Here you can set your own path.
 
-		# Seperate the path from the filter.
+		#Seperate the path from the filter.
 		head, tail = path.split("C:/Users/User/Documents/Enpass/walletx.db/")	#Here you can set your own path.
 		print("Path:" + head)
 		print("File:" + tail)
 
-		# Let's make a backup copy by appending "bak" to the name.
+		#Let's make a backup copy by appending "bak" to the name.
 		dst = src + ".bak"
+		
+		#Delete the old database
+		os.remove("C:/Users/User/iCloud Drive/Enpass/walletx.db/") #Here you can set your own path.
 
-		# Now use the shell to make a copy of the file.
+		#Now use the shell to make a copy of the file.
 		shutil.copy2("C:/Users/User/Documents/Enpass/walletx.db/",
 					 "C:/Users/User/iCloud Drive/Enpass/walletx.db/") #Here you can set your own paths.
 
-		# We also want to copy over the permissions,modification.
+		#We also want to copy over the permissions,modification.
 		shutil.copystat("C:/Users/User/Documents/Enpass/walletx.db/",
 						"C:/Users/User/iCloud Drive/Enpass/walletx.db/")	#Here you can set your own paths.
 
