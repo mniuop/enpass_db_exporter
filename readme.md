@@ -22,6 +22,10 @@ It is written in Python, hence I recommend to use it on a desktop environment. T
 
 ...
 
+## Tips
+
+
+
 ## Built With
 
 * [Python](https://www.python.org/) - The language used
@@ -30,7 +34,7 @@ It is written in Python, hence I recommend to use it on a desktop environment. T
 
 ## License
 
-This project is licensed under the MIT License - see the [License.md](license.md) file for details
+This project is licensed under the MIT License - see the [license.md](license.md) file for details
 
 ## Acknowledgments
 
